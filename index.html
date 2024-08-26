@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Deik</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'about-me')">About Me</button>
+    <button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
+    <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+</div>
+<br>
+<br>
+<div id="about-me" class="tabcontent">
+    <div class="nav-sections">
+        <input type="button" class="button-section active" onclick="openPage(event, 'section1')" title="About Me"><br>
+        <input type="button" class="button-section" onclick="openPage(event, 'section2')" title="Technical Skills"><br>
+        <input type="button" class="button-section" onclick="openPage(event, 'section3')" title="Hobbies">
+    </div>
+    <div id="section1" class="section current">
+        <br>
+        <br>
+        <h2>About Me</h2>
+        <div class="layout1">
+            <div class="who-am-i">
+                <p>My name is <b>Matthew Deik</b>.</p>
+                <p>I am a computer scientist with a minor in sociology. I am passionate about leveraging technology in a way that makes it more accessible. I have pursued my Bachelor's in Computer Science from the University of Maryland, with a graduation date of December 2024.</p>
+                <p>During my academic journey, I have developed my analytical and problem-solving skills. I enjoy collaborating with others to design and implement innovative solutions. I often leverage my background in sociology to consider inclusive solutions in order to reach as many users as possible.</p>
+            </div>
+            <img id="portrait" src="assets/portrait.jpg" alt="Image of Matthew Deik">
+        </div>
+
+    </div>
+
+    <div id="section2" class="section">
+        <br>
+        <br>
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <h3>Languages</h3>
+            <div class="languages">
+                <!-- Sorted by proficiency -->
+                <p class="language">Python <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle"></span></span></p>
+                <p class="language">Java <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle"></span><span class="skill-circle"></span></span></p>
+                <p class="language">Swift <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle"></span><span class="skill-circle"></span></span></p>
+                <p class="language">C <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle"></span><span class="skill-circle"></span><span class="skill-circle"></span></span></p>
+                <p class="language">HTML / CSS <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle"></span><span class="skill-circle"></span><span class="skill-circle"></span></span></p>
+                <p class="language">C++ <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle"></span><span class="skill-circle"></span><span class="skill-circle"></span></span></p>
+                <p class="language">JavaScript <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle filled"></span><span class="skill-circle"></span><span class="skill-circle"></span><span class="skill-circle"></span></span></p>
+                <p class="language">OCaml <span class="skill-level"><span class="skill-circle filled"></span><span class="skill-circle"></span><span class="skill-circle"></span><span class="skill-circle"></span><span class="skill-circle"></span></span></p>
+            </div>
+            <h3>Software</h3>
+            <div class="software">
+                <p>Visual Studio, Xcode, Eclipse IDE, VMWare, Office Suite, Adobe Suite</p>
+            </div>
+        </div>
+    <!-- Add some more info to right hand side -->    
+    </div>
+
+    <div id="section3" class="section">
+        <br>
+        <br>
+        <h2>Hobbies</h2>
+        <div class="layout2">
+            <div class="hobbies">
+                <p>Outside of my academic and professional life, I have a range of hobbies that I am passionate about. I enjoy kayaking, cooking, and watching TV. These activities allow me to relax and unwind, and they also inspire creativity and new ideas.</p>
+            </div>
+            <br><br>
+            <div class="imgs-center">
+                <img id="food1" src="assets/food1.jpg" alt="Funnel Cake">
+                <img id="food2" src="assets/food2.jpg" alt="Doughnuts">
+            
+            </div>
+</div>
+        
+    </div>
+</div>
+
+<div id="projects" class="tabcontent">
+    <h2>Projects</h2>
+    <p class="indent">Here you can explore some of the projects I have worked on. Use the buttons below to filter projects based on their type.</p>
+    <div class="indent">
+        <input type="button" value="All" class="reset-filter-button" onclick="toggleFilter(this)">
+        <input type="button" value="Web" class="filter-button" onclick="toggleFilter(this)">
+        <input type="button" value="Mobile" class="filter-button" onclick="toggleFilter(this)">
+        <input type="button" value="Python" class="filter-button" onclick="toggleFilter(this)">
+        <input type="button" value="Nodejs" class="filter-button" onclick="toggleFilter(this)">
+    </div>
+    <div class="indent" id="project-list">
+        <a href="https://github.com/mdeik/Translation-Machine">
+            <div class="project web nodejs">
+                <h3>Translation Machine</h3>
+                <p class="description">A web app built in Nodejs to translate text to/from different languages.</p>
+            </div>
+        </a>
+        <a href="https://github.com/mdeik/Virtual-Deck">
+            <div class="project mobile ios swift">
+                <h3>Virtual Deck</h3>
+                <p class="description">An iOS app that enables users to store and organize their collection of cards virtually. </p>
+            </div>
+        </a>
+        <a href="https://github.com/mdeik/Text-Splitter">
+            <div class="project web">
+                <h3>Text Splitter</h3>
+                <p class="description">Allows user to split a body of text by characters, words, sentences, or paragraphs.</p>
+            </div>
+        </a>
+        <a href="https://github.com/mdeik/Threes">
+            <div class="project mobile ios swift">
+                <h3>Threes</h3>
+                <p class="description">A puzzle game designed for iOS where you gain points by combing numbers of the same value or multiples of three.</p>
+            </div>
+        </a>
+        <a href="https://github.com/mdeik/Python-Renamer">
+        <div class="project python">
+            <h3>Python Renamer</h3>
+            <p class="description">A python function used to rename files. Inspired by Bulk Rename Utility.</p>
+        </div>
+    </a>
+    <a href="https://github.com/mdeik/HealthMate">
+        <div class="project mobile android java">
+            <h3>HealthMate</h3>
+            <p class="description">HealthMate is a health designed for Android that will help users monitor and manage their health.</p>
+        </div>
+    </a>
+    <a href="https://github.com/mdeik/audio-player">
+        <div class="project c++">
+            <h3>Audio Player</h3>
+            <p class="description">A command line audio player built in C++.</p>
+        </div>
+    </a>
+    <a href="https://github.com/mdeik/Subscriptions-Calculator">
+        <div class="project web">
+            <h3>Subscriptions Calculator</h3>
+            <p class="description">Helps users calculate their subscription expenses.</p>
+        </div>
+    </a>
+    </div>
+</div>
+
+<div id="contact" class="tabcontent">
+    <h2>Contact</h2>
+    <div class="indent">
+        <p id="contact-description">Thanks for showing an interest in me. Email is my prefered method of contact, but feel free to reach out to me with another provided form of contact. I look foward to hearing from you.</p>
+
+        <p>Email: <a href="mailto:matthew.deik@outlook.com">matthew.deik@outlook.com</a></p>
+        <p id="contact-other">Other: </p>
+        <a href="https://www.linkedin.com/in/mdeik/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
+        <a href="https://github.com/mdeik" target="_blank" rel="noopener noreferrer">Github</a>
+    </div>
+    
+</div>
+
+</body>
+</html>
