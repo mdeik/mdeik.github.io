@@ -414,7 +414,7 @@ h2 {
 }
 
 /* Mobile layout - switches to single column */
-@media (max-width: 730px) {
+@media (max-width: 730px), (max-height: 596px) {
     html, body {
         height: auto;
         overflow: auto;
