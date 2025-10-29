@@ -21,7 +21,7 @@ body {
     height: 100vh;
     margin: 0;
     background: var(--bg);
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     color: #d7eef7;
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
