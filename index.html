@@ -86,6 +86,7 @@
           <div class="skill-header">📝 Languages</div>
           <div class="skill-row">
             <button class="chip" type="button">Python</button>
+            <button class="chip" type="button">Rust</button>
             <button class="chip" type="button">SQL</button>
             <button class="chip" type="button">Swift</button>
             <button class="chip" type="button">Java</button>
@@ -99,6 +100,7 @@
           <div class="skill-header">🛢️ Databases & BI</div>
           <div class="skill-row">
             <button class="chip" type="button">PostgreSQL</button>
+            <button class="chip" type="button">SQLite</button>
             <button class="chip" type="button">MongoDB</button>
             <button class="chip" type="button">Excel</button>
             <button class="chip" type="button">Tableau</button>
@@ -110,11 +112,26 @@
           <div class="skill-header">🧩 Frameworks & Libraries</div>
           <div class="skill-row">
             <button class="chip" type="button">SwiftUI</button>
+            <button class="chip" type="button">Axum</button>
+            <button class="chip" type="button">Leptos/WASM</button>
+            <button class="chip" type="button">egui</button>
+            <button class="chip" type="button">ratatui</button>
             <button class="chip" type="button">Pandas</button>
             <button class="chip" type="button">NumPy</button>
             <button class="chip" type="button">scikit-learn</button>
             <button class="chip" type="button">Flask</button>
             <button class="chip" type="button">React.js</button>
+            <button class="chip" type="button">clap</button>
+            <button class="chip" type="button">rayon</button>
+          </div>
+
+          <div style="height: 6px"></div>
+
+          <div class="skill-header">🛠️ Tools & DevOps</div>
+          <div class="skill-row">
+            <button class="chip" type="button">Git</button>
+            <button class="chip" type="button">Docker</button>
+            <button class="chip" type="button">REST API</button>
           </div>
         </div>
       </div>
@@ -130,7 +147,23 @@
             <article class="item" aria-labelledby="job1">
               <span class="dot" aria-hidden="true"></span>
               <div class="job">
-                <h3 id="job1">IT Specialist</h3>
+                <h3 id="job1">AI Data Evaluator (Contract)</h3>
+                <div class="company">Handshake</div>
+                <p>
+                  Evaluated and annotated AI-generated outputs across audio,
+                  visual, and text-based tasks to improve model accuracy.
+                  Applied detailed evaluation guidelines to identify errors,
+                  assess output quality, and provide consistent feedback for AI
+                  system improvement.
+                </p>
+              </div>
+              <div class="dates">Nov 2025 - Present</div>
+            </article>
+
+            <article class="item" aria-labelledby="job2">
+              <span class="dot" aria-hidden="true"></span>
+              <div class="job">
+                <h3 id="job2">IT Specialist (Contract)</h3>
                 <div class="company">Dacco Sci, Inc.</div>
                 <p>
                   Provided desktop and system support for Windows
@@ -143,10 +176,12 @@
               <div class="dates">Sep 2023 - Present</div>
             </article>
 
-            <article class="item" aria-labelledby="job2">
+
+
+            <article class="item" aria-labelledby="job3">
               <span class="dot" aria-hidden="true"></span>
               <div class="job">
-                <h3 id="job2">Assistant to Director (Intern)</h3>
+                <h3 id="job3">Assistant to Director (Intern)</h3>
                 <div class="company">
                   University of Maryland, IT Operations
                 </div>
@@ -168,34 +203,35 @@
 
         <div class="timeline" id="projects-timeline" aria-label="Project history">
           <div class="timeline-inner">
-              <article class="item" aria-labelledby="project1">
-                <span class="dot" aria-hidden="true"></span>
-                <div class="job">
-                  <h3 id="project1">
-                    <a href="https://github.com/mdeik/jumbie" target="_blank" rel="noopener noreferrer">Jumbie</a>
-                  </h3>
-                  <div class="technologies">Rust, Axum, Leptos/WASM, SQLite, Docker, REST API</div>
-                  <p>
-                      A media management tool for automatically downloading, organizing, and renaming TV series episodes.
-                  </p>
-                </div>
-                <div class="dates">Aug 2025 - Oct 2025</div>
-              </article>
+            <article class="item" aria-labelledby="project1">
+              <span class="dot" aria-hidden="true"></span>
+              <div class="job">
+                <h3 id="project1">
+                  <a href="https://github.com/mdeik/jumbie" target="_blank" rel="noopener noreferrer">Jumbie</a>
+                </h3>
+                <div class="technologies">Rust, Axum, Leptos/WASM, SQLite, Docker, REST API</div>
+                <p>
+                  A media management tool for automatically downloading, organizing, and renaming TV series episodes.
+                </p>
+              </div>
+              <div class="dates">Aug 2025 - Oct 2025</div>
+            </article>
 
-              <article class="item" aria-labelledby="project2">
-                <span class="dot" aria-hidden="true"></span>
-                <div class="job">
-                  <h3 id="project2">
-                    <a href="https://github.com/mdeik/Batch-Rename-Utility" target="_blank" rel="noopener noreferrer">Batch Rename Utility</a>
-                  </h3>
-                  <div class="technologies">Rust, egui, ratatui, clap, rayon</div>
-                  <p>
-                    Cross-platform batch file renaming utility with GUI, TUI, and CLI
-                    interfaces, featuring multithreaded processing and regex-based matching.
-                  </p>
-                </div>
-                <div class="dates">Aug 2025 - Oct 2025</div>
-              </article>
+            <article class="item" aria-labelledby="project2">
+              <span class="dot" aria-hidden="true"></span>
+              <div class="job">
+                <h3 id="project2">
+                  <a href="https://github.com/mdeik/Batch-Rename-Utility" target="_blank"
+                    rel="noopener noreferrer">Batch Rename Utility</a>
+                </h3>
+                <div class="technologies">Rust, egui, ratatui, clap, rayon</div>
+                <p>
+                  Cross-platform batch file renaming utility with GUI, TUI, and CLI
+                  interfaces, featuring multithreaded processing and regex-based matching.
+                </p>
+              </div>
+              <div class="dates">Aug 2025 - Oct 2025</div>
+            </article>
 
             <article class="item" aria-labelledby="project3">
               <span class="dot" aria-hidden="true"></span>

@@ -370,7 +370,8 @@ h2 {
     color: #fff;
 }
 
-.company, .technologies {
+.company,
+.technologies {
     margin: 6px 0 6px;
     color: var(--muted);
     font-weight: 600;
@@ -383,7 +384,7 @@ h2 {
     font-size: 0.88rem;
     line-height: 1.4;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
