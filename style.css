@@ -370,7 +370,7 @@ h2 {
     color: #fff;
 }
 
-.company {
+.company, .technologies {
     margin: 6px 0 6px;
     color: var(--muted);
     font-weight: 600;
@@ -447,8 +447,7 @@ h2 {
 }
 
 .timeline.expanded {
-    overflow: visible !important;
-    max-height: none !important;
+    overflow: auto !important;
 }
 
 /* Medium screen adjustments */
