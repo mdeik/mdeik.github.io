@@ -37,6 +37,7 @@
       root.style.setProperty("--base-font", `${MAX_FONT}px`);
       if (timelineEl) timelineEl.style.overflow = "visible";
       if (projectsTimelineEl) projectsTimelineEl.style.overflow = "visible";
+      scheduleProcessAll();
       return;
     }
 
@@ -51,6 +52,7 @@
         if (timelineEl) timelineEl.style.overflow = "auto";
         if (projectsTimelineEl) projectsTimelineEl.style.overflow = "auto";
         resetScrollTop(timelineEl, projectsTimelineEl);
+        scheduleProcessAll();
         return;
       }
 
@@ -62,6 +64,7 @@
         if (timelineEl) timelineEl.style.overflow = "auto";
         if (projectsTimelineEl) projectsTimelineEl.style.overflow = "auto";
         resetScrollTop(timelineEl, projectsTimelineEl);
+        scheduleProcessAll();
       });
     });
   }
